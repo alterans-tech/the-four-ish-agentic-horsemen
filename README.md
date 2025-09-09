@@ -100,5 +100,4 @@ Follows actual development flow: Plan → Build → Deploy → Optimize → Test
 
 ### Context Engineering
 
-For deeper insight into how the Horsemen coordinate, see the  
-[CONTEXT-ENGINEERING.md](./CONTEXT-ENGINEERING.md) file at the root of this repository.
+For deeper insight into how the Horsemen coordinate, see the [CONTEXT-ENGINEERING.md](./CONTEXT-ENGINEERING.md) file at the root of this repository.
