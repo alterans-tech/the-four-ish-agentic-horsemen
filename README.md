@@ -1,5 +1,7 @@
 # 📜 The Book of Revelation: Seven Seals Development Framework
 
+> **⚠️ IMPORTANT: This is a conceptual framework currently in development and not ready for production use. For a comprehensive analysis of the framework's current state, strengths, and areas for improvement, see [analysis-of-the-framework-by-claude-code.md](./analysis-of-the-framework-by-claude-code.md)**
+
 *And I saw in the right hand of him that sat on the throne a book written within and on the backside, sealed with seven seals. And no man in heaven, nor in earth, neither under the earth, was able to open the book... And I beheld, and, lo, a Lamb as it had been slain... And he came and took the book... And when he had opened the seven seals...*
 
 ## The Vision
@@ -213,7 +215,9 @@ seven-seals-development-framework/
 │   ├── [firebase specialists]
 │   ├── [testing specialists]
 │   └── [... other specialists]
-├── CONTEXT-ENGINEERING.md                       # Deep dive into context engineering
+├── context-engineering.md                       # Deep dive into context engineering
+├── preservation.md                              # The preservation protocol
+├── analysis-of-the-framework-by-claude-code.md  # Framework analysis and recommendations
 └── README.md                                    # You are here
 ```
 
@@ -290,7 +294,7 @@ This framework is built on the principles of **Context Engineering** - the disci
 - **Gates**: Non-negotiable quality criteria
 - **Integration**: How agents work together
 
-See [CONTEXT-ENGINEERING.md](./CONTEXT-ENGINEERING.md) for a deep dive into these principles.
+See [context-engineering.md](./context-engineering.md) for a deep dive into these principles.
 
 ## 🛡️ The Preservation Protocol
 
@@ -319,7 +323,7 @@ The existing system is sacred until proven otherwise. Every agent in the framewo
 - **Seventh Seal (QA)**: Validates all preservation requirements
 - **Great White Throne**: Final verification of preservation compliance
 
-See [PRESERVATION.md](./PRESERVATION.md) for the complete protocol.
+See [preservation.md](./preservation.md) for the complete protocol.
 
 ## The Revelation
 

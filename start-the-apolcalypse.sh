@@ -26,6 +26,54 @@ echo -e "${YELLOW}      🔥 INITIATING THE APOCALYPSE PROTOCOL 🔥${NC}"
 echo -e "${RED}═══════════════════════════════════════════════════════════${NC}"
 echo ""
 
+# Check if --purge flag is provided
+if [ "$1" == "--purge" ]; then
+    echo -e "${RED}⚠️  WARNING: PURGE MODE ACTIVATED ⚠️${NC}"
+    echo -e "${YELLOW}This will DELETE ALL existing agents in:${NC}"
+    echo -e "${CYAN}$TARGET_DIR${NC}"
+    echo ""
+    
+    # Count existing agents
+    if [ -d "$TARGET_DIR" ]; then
+        EXISTING_COUNT=$(find "$TARGET_DIR" -name "*.md" -type f 2>/dev/null | wc -l | tr -d ' ')
+        if [ "$EXISTING_COUNT" -gt 0 ]; then
+            echo -e "${MAGENTA}Found $EXISTING_COUNT existing agent(s) that will be destroyed.${NC}"
+            echo ""
+            
+            # First confirmation
+            echo -e "${YELLOW}Are you sure you want to delete all existing agents? (yes/no)${NC}"
+            read -r CONFIRM1
+            if [ "$CONFIRM1" != "yes" ]; then
+                echo -e "${GREEN}Purge cancelled. Exiting...${NC}"
+                exit 0
+            fi
+            
+            # Second confirmation with explicit typing requirement
+            echo ""
+            echo -e "${RED}⚠️  FINAL WARNING: This action cannot be undone! ⚠️${NC}"
+            echo -e "${YELLOW}Type 'PURGE ALL AGENTS' to confirm deletion:${NC}"
+            read -r CONFIRM2
+            if [ "$CONFIRM2" != "PURGE ALL AGENTS" ]; then
+                echo -e "${GREEN}Purge cancelled. Exiting...${NC}"
+                exit 0
+            fi
+            
+            # Perform the purge
+            echo ""
+            echo -e "${RED}🔥 PURGING ALL EXISTING AGENTS...${NC}"
+            rm -f "$TARGET_DIR"/*.md
+            echo -e "${GREEN}✓ Purge complete. All existing agents have been removed.${NC}"
+            echo ""
+        else
+            echo -e "${CYAN}No existing agents found. Nothing to purge.${NC}"
+            echo ""
+        fi
+    else
+        echo -e "${CYAN}Agent directory doesn't exist yet. Nothing to purge.${NC}"
+        echo ""
+    fi
+fi
+
 # Check if we're in the correct directory
 if [ ! -d "$SEVEN_SEALS_DIR" ] || [ ! -d "$SCROLL_BREAKERS_DIR" ]; then
     echo -e "${RED}⚠️  Error: This script must be run from the project root directory.${NC}"
