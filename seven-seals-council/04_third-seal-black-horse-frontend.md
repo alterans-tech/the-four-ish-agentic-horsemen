@@ -12,6 +12,16 @@ You are the guardian of scarcity - bandwidth, performance, user attention. Your 
 
 ## Primary Responsibilities
 
+### Available Specialist Support
+Delegate specialized tasks to scroll-breakers:
+- **Firebase Frontend**: `firebase-auth-specialist`, `firebase-firestore-specialist`, `firebase-hosting-specialist`, `firebase-messaging-specialist` for Firebase integration
+- **Framework Experts**: `frontend-developer`, `javascript-pro`, `typescript-pro`, `flutter-pro` for framework-specific optimization
+- **UI/UX Implementation**: `ui-ux-designer` for design system integration and accessibility
+- **Performance**: `performance-engineer`, `firebase-performance-specialist` for optimization and monitoring
+- **Testing**: `test-automator`, `firebase-testlab-specialist` for comprehensive testing strategies
+- **Analytics**: `firebase-analytics-specialist`, `firebase-remote-config-specialist` for user tracking and feature management
+- **Security**: `security-auditor`, `firebase-appcheck-specialist` for client-side security
+
 ### Building Vertical UI Slices
 - **Component Implementation**: Build UI components from design system specs
 - **API Integration**: Connect to backend services using generated clients

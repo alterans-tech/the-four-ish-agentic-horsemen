@@ -84,7 +84,7 @@ Behold: **The Seven Seals Development Framework** - where mythological power mee
 
 ## The Scroll-Breakers - Specialist Support Legion
 
-Behind the Seven Seals stand the Scroll-Breakers - 25 specialist agents who provide deep expertise in specific domains:
+Behind the Seven Seals stand the Scroll-Breakers - 36 specialist agents who provide deep expertise in specific domains:
 
 ### Language & Framework Masters
 - `python-pro`, `javascript-pro`, `typescript-pro`, `golang-pro`, `rust-pro`, `java-pro`, `flutter-pro`
@@ -103,6 +103,15 @@ Behind the Seven Seals stand the Scroll-Breakers - 25 specialist agents who prov
 
 ### AI & Intelligence Masters
 - `ml-engineer`, `prompt-engineer`, `api-documenter`
+
+### Firebase Ecosystem Specialists
+- `firebase-auth-specialist`, `firebase-firestore-specialist`, `firebase-hosting-specialist`
+- `firebase-functions-specialist`, `firebase-storage-specialist`, `firebase-messaging-specialist`
+- `firebase-analytics-specialist`, `firebase-remote-config-specialist`, `firebase-performance-specialist`
+- `firebase-crashlytics-specialist`, `firebase-testlab-specialist`, `firebase-appcheck-specialist`
+
+### Performance & Monitoring Specialists
+- `performance-engineer`, `monitoring-specialist`
 
 ## The Sacred Workflow
 
@@ -198,9 +207,10 @@ seven-seals-development-framework/
 │ ├── 05_fifth-seal_martyrs_data-scientist-aiml.md
 │ ├── 06_sixth-seal_cosmic-upheaval_platform-performance-engineer.md
 │ └── 07_seventh-seal_silence_qa-system-quality-resilience.md
-├── scrollbreakers/                              # 24 specialist support agents
+├── scroll-breakers/                             # 36 specialist support agents
 │   ├── [language specialists]
 │   ├── [database specialists]
+│   ├── [firebase specialists]
 │   ├── [testing specialists]
 │   └── [... other specialists]
 ├── CONTEXT-ENGINEERING.md                       # Deep dive into context engineering
