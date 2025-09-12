@@ -170,9 +170,9 @@ Track these metrics for every change:
 7. **PROCEED** with caution
 
 ### Escalation Path
-1. Detecting Agent → Lead Architect
-2. Lead Architect → White Throne Judgment
-3. White Throne → Full System Rollback
+1. Detecting Agent → The Lamb (Lead Architect)
+2. The Lamb → Great White Throne (TDA)
+3. Great White Throne → Full System Rollback
 4. Post-Mortem → Process Improvement
 
 ## The Preservation Oath
@@ -190,9 +190,21 @@ Track these metrics for every change:
 ## Enforcement
 
 This protocol is:
-- **Mandatory** for all agents
+- **Mandatory** for all agents (Seven Seals and Scrollbreakers)
 - **Non-negotiable** in implementation
-- **Audited** by White Throne Judgment
+- **Audited** by Great White Throne Judgment
 - **Evolved** through lessons learned
+
+### Agent-Specific Preservation Duties
+
+- **The Lamb**: Ensures preservation requirements in Plan Pack
+- **First Seal (UI/UX)**: Preserves user experience and accessibility
+- **Second Seal (Data)**: Maintains data integrity and contracts
+- **Third Seal (Frontend)**: Protects UI functionality and state
+- **Fourth Seal (Backend)**: Guards API stability and compatibility
+- **Fifth Seal (AI/ML)**: Preserves model performance and safety
+- **Sixth Seal (Platform)**: Maintains infrastructure stability
+- **Seventh Seal (QA)**: Validates all preservation requirements
+- **Great White Throne**: Final verification of preservation compliance
 
 **Remember: The best code is often the code you don't write. The best change is often the change you don't make. Preserve first, improve second, and always with explicit permission.**

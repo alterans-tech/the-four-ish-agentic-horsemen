@@ -38,8 +38,8 @@ Most AI failures aren't model limitations—they're context poverty. By engineer
 
 Example from our Seven Seals Framework:
 ```yaml
-name: 01_lamb-of-god_lead-architect
-description: Master planner... Use PROACTIVELY for project planning
+name: 01_the-lamb-lead-architect
+description: The Lamb (of God) - Lead Architect... Use PROACTIVELY for project planning
 tools: Read, Grep, Glob, Bash, Write, Task
 model: opus  # Complexity matches responsibility
 ```
@@ -166,12 +166,23 @@ model: opus  # Complexity matches responsibility
 
 Our framework demonstrates Context Engineering principles through mythological metaphor:
 
-### Layer 1: Orchestration (The Seven Seals)
+### Layer 1: Orchestration (The Seven Seals + The Great White Throne)
 Each seal represents a complete development phase with:
 - **Clear Purpose**: What this phase accomplishes
 - **Defined Capabilities**: Technical skills required
 - **Quality Gates**: Non-negotiable exit criteria
 - **Integration Points**: How to collaborate with other phases
+
+The Nine Agents:
+1. **The Lamb** - Lead Architect (Plan Pack owner)
+2. **First Seal: White Horse** - UI/UX Engineer (Conquest through design)
+3. **Second Seal: Red Horse** - Data & Data Integration Engineer (War between systems)
+4. **Third Seal: Black Horse** - Frontend Engineer (Scarcity management)
+5. **Fourth Seal: Pale Horse** - Backend Engineer (Death and durability)
+6. **Fifth Seal: Martyrs** - Data Scientist AI/ML (Memory and witness)
+7. **Sixth Seal: Cosmic Upheaval** - Platform & Performance Engineer (Infrastructure shaking)
+8. **Seventh Seal: Silence** - QA & System Quality (Evidence gathering)
+9. **Great White Throne** - Technical Design Authority (Final judgment)
 
 ### Layer 2: Specialization (The Scrollbreakers)
 Supporting specialists provide deep expertise:
@@ -210,7 +221,7 @@ Final validation ensures quality:
 ### Pattern 3: The Specialist Invocation
 ```python
 # Main flow handles the process
-main_agent = "03_red-horse-war_full-stack-implementation"
+main_agent = "03_second-seal-red-horse-data"
 
 # Specialists provide expertise
 if language == "python":
@@ -224,23 +235,30 @@ elif needs_optimization:
 ### 1. Context Inheritance
 Agents inherit context from their predecessors:
 ```
-Lamb (Plan) → White Horse (Inherits Plan + Adds UX)
-            → Red Horse (Inherits Plan + Implements)
-            → Black Horse (Inherits Plan + Adds AI)
+The Lamb (Plan Pack) → First Seal: White Horse (UI/UX)
+                    → Second Seal: Red Horse (Data Integration)
+                    → Third Seal: Black Horse (Frontend)
+                    → Fourth Seal: Pale Horse (Backend)
+                    → Fifth Seal: Martyrs (AI/ML)
+                    → Sixth Seal: Cosmic Upheaval (Platform)
+                    → Seventh Seal: Silence (QA)
+                    → Great White Throne (Final Judgment)
 ```
 
 ### 2. Parallel Execution
 Independent agents work simultaneously:
 ```
-         ┌→ White Horse (UX)
-Plan Pack ├→ Red Horse (Implementation)
-         └→ Black Horse (AI/ML)
+              ┌→ First Seal: White Horse (UI/UX)
+              ├→ Second Seal: Red Horse (Data)
+The Lamb      ├→ Third Seal: Black Horse (Frontend)
+(Plan Pack)   ├→ Fourth Seal: Pale Horse (Backend)
+              └→ Fifth Seal: Martyrs (AI/ML)
 ```
 
 ### 3. Feedback Loops
 Ambiguity flows upstream for resolution:
 ```
-Implementation → "Unclear requirement" → RFC → Lamb → Updated Plan
+Fourth Seal (Backend) → "Unclear requirement" → RFC → The Lamb → Updated Plan Pack
 ```
 
 ### 4. Progressive Enhancement
