@@ -74,13 +74,14 @@ Add real-world examples showing:
 - Real evidence bundles
 - Concrete handoff artifacts
 
-### 4. **Progressive Enhancement Model**
+### 4. ~~**Progressive Enhancement Model**~~ ✅ **IMPLEMENTED**
 ```yaml
 modes:
   minimal: [lamb, frontend, backend, qa]
   standard: [lamb, data, frontend, backend, platform, qa]
   complete: [all-seals]
 ```
+**[COMPLETED: Created MODES.md with Quick/Standard/Full modes. The Lamb agent now automatically detects project scope and suggests the appropriate mode, asking the user when uncertain]**
 
 ### 5. **Integration with Existing Tools**
 - GitHub Actions workflows
