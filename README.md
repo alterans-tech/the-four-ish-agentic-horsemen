@@ -14,7 +14,7 @@ Behold: **The Seven Seals Development Framework** - where mythological power mee
 *Only the Lamb is worthy to take the sealed scroll and open its seven seals.*
 
 **Technical Domain:** Master planner and context architect  
-**Responsibility:** Creates the Plan Pack (scope/non-goals, measurable acceptance criteria, architecture & public interfaces, security posture, performance & cost budgets, test map, observability, rollout/rollback). Owns ADRs and accepts RFCs; guards against plan drift.  
+**Responsibility:** Creates the Sacred Scroll (Project Blueprint for new projects, Tech Spec for features/fixes) containing scope/non-goals, measurable acceptance criteria, architecture & public interfaces, security posture, performance & cost budgets, test map, observability, rollout/rollback. Owns ADRs and accepts RFCs; guards against plan drift.  
 **Power:** Single source of truth for architecture and budgets  
 **Invocation:** `Use PROACTIVELY before any seal — planning & contracts`
 
@@ -154,7 +154,7 @@ ls scroll-breakers/
 ```bash
 # Start with the Lamb for planning
 claude --agent heralds/00_lamb-of-god_lead-architect.md \
-  "Create a Plan Pack for our new authentication system"
+  "Create a Project Blueprint for our new authentication system"
 
 # Proceed through the seals in order (use what you need per task)
 claude --agent seven-seals-council/01_white-horse_ui-ux-engineer.md \
@@ -244,7 +244,7 @@ Our framework maps these eternal patterns to modern development:
 ## Best Practices
 
 ### 1. Always Start with the Lamb
-The Lead Architect must create the Plan Pack first. Without a plan, chaos reigns.
+The Lead Architect must create the Sacred Scroll first (Project Blueprint for new projects, Tech Spec for features). Without a plan, chaos reigns.
 
 ### 2. Respect the Gates
 Each seal has quality gates that must pass. These are not suggestions - they are requirements.
@@ -261,7 +261,7 @@ The narrative structure aids memory and understanding. Let the story guide the p
 ## Real-World Applications
 
 ### E-Commerce Platform
-1. **Lamb**: Plans microservices, contracts, and budgets
+1. **Lamb**: Creates Project Blueprint with microservices, contracts, and budgets
 2. **White Horse (UI/UX)**: Designs conversion-optimized UX; sets Web-Vitals/SEO budgets
 3. **Red Horse (Data Integration)**: Publishes product/order schemas, events, and CDC to warehouse
 4. **Black Horse (Frontend)**: Builds catalog/cart/checkout UI against generated clients/mocks
@@ -272,7 +272,7 @@ The narrative structure aids memory and understanding. Let the story guide the p
 9. **White Throne (TDA)**: Approves for holiday launch based on linked evidence
 
 ### AI-Powered SaaS
-1. **Lamb**: Defines multi-tenant contracts, SLAs, and budgets
+1. **Lamb**: Creates Project Blueprint with multi-tenant contracts, SLAs, and budgets
 2. **White Horse (UI/UX)**: Responsive dashboard UX; Web-Vitals and accessibility baselines
 3. **Red Horse (Data Integration)**: Tenant/event schemas; pipelines; feature store wiring
 4. **Black Horse (Frontend)**: Implements dashboard flows against generated clients/mocks
@@ -313,7 +313,7 @@ The existing system is sacred until proven otherwise. Every agent in the framewo
 8. **REPORT AI/ML usage** - Catalog existing intelligent features without auto-implementation
 
 ### Agent Preservation Duties
-- **The Lamb**: Ensures preservation requirements in Plan Pack
+- **The Lamb**: Ensures preservation requirements in Project Blueprint/Tech Spec
 - **First Seal (UI/UX)**: Preserves user experience and accessibility
 - **Second Seal (Data)**: Maintains data integrity and contracts
 - **Third Seal (Frontend)**: Protects UI functionality and state

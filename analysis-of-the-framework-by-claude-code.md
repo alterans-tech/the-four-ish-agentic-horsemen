@@ -33,12 +33,12 @@ While the conceptual framework is solid, you're missing:
 - Actual orchestration code/scripts
 - State management between agents
 - Concrete examples of agent handoffs
-- Implementation of the "Plan Pack" data structure
+- Implementation of the "Project Blueprint/Tech Spec" data structure
 
 ### 3. **Tool Allocation Issues**
 Some agents have mismatched tools:
-- The Lamb (architect) has full write access but shouldn't be implementing
-- QA agent has write tools but should mostly read/test
+- ~~The Lamb (architect) has full write access but shouldn't be implementing~~ **[CORRECTED: The Lamb needs Write/Edit tools to create Sacred Scrolls (Project Blueprints/Tech Specs), specifications, and handoff documents - they write documentation, not code]**
+- QA agent has write tools but should mostly read/test (though they may need to write test reports and evidence bundles)
 - Missing specialized testing tools for the QA seal
 
 ### 4. **Complexity vs. Practicality Trade-off**
@@ -70,7 +70,7 @@ Create an actual orchestrator that:
 ### 3. **Practical Examples**
 Add real-world examples showing:
 - A complete flow through all seals
-- Actual Plan Pack documents
+- Actual Project Blueprint and Tech Spec documents
 - Real evidence bundles
 - Concrete handoff artifacts
 
@@ -120,7 +120,7 @@ Build a complete example project showing:
 - Production deployment
 
 ### 4. **Simplify Tool Assignments**
-Match tools to actual agent needs - architects don't code, QA doesn't write features.
+~~Match tools to actual agent needs - architects don't code, QA doesn't write features.~~ **[CORRECTED: Tool assignments are actually appropriate - architects write specifications/documentation (not code), QA writes test reports/evidence bundles (not features)]**
 
 ### 5. **Add Pragmatic Modes**
 - Quick mode: 3-4 seals
