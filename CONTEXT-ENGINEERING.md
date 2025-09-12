@@ -174,7 +174,7 @@ Each seal represents a complete development phase with:
 - **Integration Points**: How to collaborate with other phases
 
 The Nine Agents:
-1. **The Lamb** - Lead Architect (Plan Pack owner)
+1. **The Lamb** - Lead Architect (Sacred Scroll creator)
 2. **First Seal: White Horse** - UI/UX Engineer (Conquest through design)
 3. **Second Seal: Red Horse** - Data & Data Integration Engineer (War between systems)
 4. **Third Seal: Black Horse** - Frontend Engineer (Scarcity management)
@@ -198,9 +198,9 @@ Final validation ensures quality:
 
 ## Real-World Application Patterns
 
-### Pattern 1: The Comprehensive Plan Pack
+### Pattern 1: The Comprehensive Project Blueprint
 ```yaml
-/docs/plan-pack/
+/docs/project-blueprint/
 ├── scope.md           # What we're building (and not building)
 ├── architecture.md    # How it fits together
 ├── budgets.yaml       # Performance, cost, resource limits
@@ -235,7 +235,7 @@ elif needs_optimization:
 ### 1. Context Inheritance
 Agents inherit context from their predecessors:
 ```
-The Lamb (Plan Pack) → First Seal: White Horse (UI/UX)
+The Lamb (Sacred Scroll) → First Seal: White Horse (UI/UX)
                     → Second Seal: Red Horse (Data Integration)
                     → Third Seal: Black Horse (Frontend)
                     → Fourth Seal: Pale Horse (Backend)
@@ -251,14 +251,14 @@ Independent agents work simultaneously:
               ┌→ First Seal: White Horse (UI/UX)
               ├→ Second Seal: Red Horse (Data)
 The Lamb      ├→ Third Seal: Black Horse (Frontend)
-(Plan Pack)   ├→ Fourth Seal: Pale Horse (Backend)
+(Sacred Scroll)   ├→ Fourth Seal: Pale Horse (Backend)
               └→ Fifth Seal: Martyrs (AI/ML)
 ```
 
 ### 3. Feedback Loops
 Ambiguity flows upstream for resolution:
 ```
-Fourth Seal (Backend) → "Unclear requirement" → RFC → The Lamb → Updated Plan Pack
+Fourth Seal (Backend) → "Unclear requirement" → RFC → The Lamb → Updated Sacred Scroll
 ```
 
 ### 4. Progressive Enhancement

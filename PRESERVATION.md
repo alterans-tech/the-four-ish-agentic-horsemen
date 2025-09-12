@@ -197,7 +197,7 @@ This protocol is:
 
 ### Agent-Specific Preservation Duties
 
-- **The Lamb**: Ensures preservation requirements in Plan Pack
+- **The Lamb**: Ensures preservation requirements in Project Blueprint/Tech Spec
 - **First Seal (UI/UX)**: Preserves user experience and accessibility
 - **Second Seal (Data)**: Maintains data integrity and contracts
 - **Third Seal (Frontend)**: Protects UI functionality and state
