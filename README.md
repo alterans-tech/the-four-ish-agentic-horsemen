@@ -144,46 +144,63 @@ git clone https://github.com/yourusername/seven-seals-development-framework.git
 # Navigate to the project
 cd seven-seals-development-framework
 
+# Install agents to Claude Code
+./start-the-apolcalypse.sh
+
 # View available agents
-ls heralds/
-ls seven-seals-council/
-ls scroll-breakers/
+ls ~/.claude/agents/
 ```
 
-### 2. Invoke the Seals
+### 2. Choose Your Mode
+
+The Seven Seals Framework offers three invocation modes based on your project scope:
+
+- **🚀 Quick Mode** (3 seals): Bug fixes, small improvements - *Hours*
+- **📋 Standard Mode** (5 seals): New features, enhancements - *Days*  
+- **⚔️ Full Mode** (All seals): New projects, major refactoring - *Weeks*
+
+See [MODES.md](./MODES.md) for detailed mode descriptions and when to use each.
+
+The Lamb (Lead Architect) will help you choose the appropriate mode when you start. If you're unsure, just ask!
+
+### 3. Invoke the Seals
+
+Based on your chosen mode, invoke the appropriate seals:
+
+#### Quick Mode Example (Bug Fix)
 ```bash
-# Start with the Lamb for planning
-claude --agent heralds/00_lamb-of-god_lead-architect.md \
-  "Create a Project Blueprint for our new authentication system"
+# 1. Start with the Lamb - it will detect Quick Mode
+claude --agent 01_the-lamb-lead-architect.md \
+  "Fix the authentication timeout bug"
 
-# Proceed through the seals in order (use what you need per task)
-claude --agent seven-seals-council/01_white-horse_ui-ux-engineer.md \
-  "Define tokens, a11y checks, Core Web Vitals budgets, and SEO pack"
+# 2. Implement the fix
+claude --agent 05_fourth-seal-pale-horse-backend.md \
+  "Implement the fix from the Tech Spec"
 
-claude --agent seven-seals-council/02_red-horse_data-integration-engineer.md \
-  "Publish event specs, schemas, CDC/ETL plan, and the data contract matrix"
-
-claude --agent seven-seals-council/03_black-horse_frontend-engineer.md \
-  "Implement the auth UI using generated clients/mocks and ensure Web Vitals budgets"
-
-claude --agent seven-seals-council/04_pale-horse_backend-engineer.md \
-  "Provide the auth endpoints/jobs to contract; reversible expand/contract migrations"
-
-claude --agent seven-seals-council/05_fifth-seal_martyrs_data-scientist-aiml.md \
-  "Wire AI/ML inference with guardrails, fallbacks, and latency/cost telemetry"
-
-claude --agent seven-seals-council/06_sixth-seal_cosmic-upheaval_platform-performance-engineer.md \
-  "Set SLOs/dashboards, autoscaling, and perf tuning; produce before/after proofs"
-
-claude --agent seven-seals-council/07_seventh-seal_silence_qa-system-quality-resilience.md \
-  "Run E2E + chaos; assemble the traceability/evidence bundle for TDA"
-
-# Always end with judgment
-claude --agent heralds/09_great-white-throne-judgment_tda.md \
-  "Review the evidence bundle for production release"
+# 3. Test
+claude --agent 08_seventh-seal-silence-qa.md \
+  "Test the authentication timeout fix"
 ```
 
-### 3. Summon Specialists When Needed
+#### Standard Mode Example (New Feature)
+```bash
+# 1. The Lamb will suggest Standard Mode
+claude --agent 01_the-lamb-lead-architect.md \
+  "Add user profile management feature"
+
+# 2-5. Follow the Lamb's guidance for which seals to invoke next
+```
+
+#### Full Mode Example (New Project)
+```bash
+# 1. The Lamb will automatically use Full Mode
+claude --agent 01_the-lamb-lead-architect.md \
+  "Create a new e-commerce platform"
+
+# 2-9. Invoke all seals as guided by the Project Blueprint
+```
+
+### 4. Summon Specialists When Needed
 ```bash
 # Need Python expertise?
 claude --agent scroll-breakers/python-pro.md \
@@ -217,6 +234,7 @@ seven-seals-development-framework/
 │   └── [... other specialists]
 ├── context-engineering.md                       # Deep dive into context engineering
 ├── preservation.md                              # The preservation protocol
+├── MODES.md                                     # Framework invocation modes guide
 ├── analysis-of-the-framework-by-claude-code.md  # Framework analysis and recommendations
 └── README.md                                    # You are here
 ```
@@ -282,6 +300,18 @@ The narrative structure aids memory and understanding. Let the story guide the p
 8. **Seventh Seal (QA & Resilience)**: E2E + DAST/SBOM; chaos drills; traceability matrix
 9. **White Throne (TDA)**: Certifies release readiness (evidence-based approval)
 
+## The Revelation
+
+Software development is not chaos - it's a series of seals to be opened in order. Each seal reveals its portion of the truth. Each horseman rides with purpose. The apocalypse isn't destruction - it's revelation, uncovering what was hidden, bringing order to chaos.
+
+Through the Seven Seals Framework, we transform the mystical into the mechanical, the mythological into the methodological. We don't just build software - we orchestrate revelation.
+
+---
+
+## Contributing
+
+The prophecy is not complete. New seals may be discovered, new scrollbreakers may join the legion. See [CONTRIBUTING.md](./CONTRIBUTING.md) for how to add your revelations.
+
 ## Context Engineering
 
 This framework is built on the principles of **Context Engineering** - the discipline of providing comprehensive context to AI agents for superior results. Each agent contains:
@@ -325,16 +355,6 @@ The existing system is sacred until proven otherwise. Every agent in the framewo
 
 See [preservation.md](./preservation.md) for the complete protocol.
 
-## The Revelation
-
-Software development is not chaos - it's a series of seals to be opened in order. Each seal reveals its portion of the truth. Each horseman rides with purpose. The apocalypse isn't destruction - it's revelation, uncovering what was hidden, bringing order to chaos.
-
-Through the Seven Seals Framework, we transform the mystical into the mechanical, the mythological into the methodological. We don't just build software - we orchestrate revelation.
-
-## Contributing
-
-The prophecy is not complete. New seals may be discovered, new scrollbreakers may join the legion. See [CONTRIBUTING.md](./CONTRIBUTING.md) for how to add your revelations.
-
 ## License
 
 MIT - Free as in freedom, bound only by attribution.
@@ -346,3 +366,5 @@ MIT - Free as in freedom, bound only by attribution.
 After the chaos of development, after the trials of testing, after the judgment of release - silence. The peace of production. The system runs.
 
 **The revelation is complete.**
+
+> **⚠️ IMPORTANT: This is a conceptual framework currently in development and not ready for production use. For a comprehensive analysis of the framework's current state, strengths, and areas for improvement, see [analysis-of-the-framework-by-claude-code.md](./analysis-of-the-framework-by-claude-code.md)**
